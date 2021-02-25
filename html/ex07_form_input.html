@@ -1,0 +1,81 @@
+﻿<html>
+ <head>
+  <title> Form, Input </title>
+  <meta charset="UTF-8">
+ </head>
+ 
+
+ <body>
+
+  <h1> Form 태그와 Input 태그 </h1>
+
+  
+ <fieldset>
+
+   <legend> 단순 텍스트 입력 </legend>
+
+   <p>&lt;input name="var1" type="text"></p>
+
+   <p><input name="var1" type="text"></p>
+
+  </fieldset>
+
+
+
+  <fieldset>
+
+   <legend> 비밀번호 입력 </legend>
+
+   <p> &lt;input name="var2" type="password"></p>
+   <p> <input name="var2" type="password"></p>
+  </fieldset>
+
+  <fieldset>
+   <legend> 체크박스 </legend>
+   <p> 빨강&lt;input name="color" type="checkbox" value="red"><br>
+       파랑&lt;input name="color" type="checkbox" value="blue"></p>
+   <p> 빨강<input name="color" type="checkbox" value="red"><br>
+       파랑<input name="color" type="checkbox" value="blue"></p>
+  </fieldset>
+
+
+  <fieldset>
+   <legend> 라디오 </legend>
+   <p> 현금&lt;input name="pay" type="radio" value="cash"><br>
+       카드&lt;input name="pay" type="radio" value="card"></p>
+   <p> 현금<input name="pay" type="radio" value="cash"><br>
+       카드<input name="pay" type="radio" value="card"></p>
+  </fieldset>
+
+
+
+  <fieldset>
+   <legend> 셀렉트 박스 </legend>
+   <select name="job">
+    <option> ===직업을 선택하세요=== </option>
+    <option value="초등학생"> 초등학생 </option> 
+    <option value="중학생"> 중학생 </option> 
+    <option value="고등학생"> 고등학생 </option> 
+    <option value="대학생"> 대학생 </option> 
+   </select>
+  </fieldset>
+  
+  <fieldset>
+   <legend> Text Area </legend>
+   간단한 메시지 작성<br>
+   <textarea name="var5" rows="5" cols="20"></textarea>
+
+  </fieldset>
+
+  <fieldset>
+   <legend> Form 태그 안에 Input 태그 </legend>
+
+   <form action="전송할 페이지" method="get">
+    ID : <input name="userid" type="text"><br>
+    PW : <input name="userpw" type="password"><br>
+    <input type="submit" value="LOGIN">
+   </form>
+ <br><br><br>
+ </body>
+
+</html>

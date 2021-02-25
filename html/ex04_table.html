@@ -1,0 +1,63 @@
+<!-- ex04_table.html -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   브라우저 탭에 표시되는 제목
+  </title>
+  <!-- <meta charset="UTF-8"> -->
+ </head>
+
+ <body>
+  여기가 본문 시작점
+  <h1> Table, 표 그리기 태그 </h1>
+	
+  <fieldset>
+   <legend>표에 사용되는 태그</legend>
+    <b>&lt;table></b> : 표의 시작점과 마무리를 알린다<br>  <!-- &lt; 는 < 기호를 쓰고 싶을 떄 -->
+   속성으로, 너비, 높이, 정렬, 테두리, 간격 등이 있다.<br>
+   </p>
+
+   <p>
+    <b>&lt;tr></b> : 표의 한 줄을 의미한다.<br>
+    표 내부의 데이터의 정렬, 너비, 높이가 있다.<br>
+   </p>
+
+   <p>
+    <b>&lt;td></b> : 표의 한 칸을 의미한다.<br>
+    tr과 마찬가지의 속성을 가진다. 가로 통합, 세로통합이 있다.<br>
+    표의 내용은 td안에만 작성한다.<br>
+   </p>
+
+   <p>
+    <b>&lt;th></b> : td와 동일하지만, 표 안에서의 강조되는 제목<br>
+    td와 같은 속성을 가지며, 기본적으로 강조와 가운데 정렬이 적용된다.
+   <br></p>
+  </fieldset>
+
+  <br>
+  <table border="1" align="center" width="300px" height="150px">
+   <tr>
+    <th colspan="2"> 회원정보 </th>
+   </tr>
+   <tr align="center">
+    <td> 이름 </td><td> 원종래 </td>
+   </tr>
+   <tr>
+    <td align="center"> 주소 </td><td> 부산 해운대구 </td>
+   </tr>
+   <tr>
+    <td rowspan="2"> 세로로 합치기 </td><td>내용 1</td>
+   </tr>
+   <tr>
+    <td>내용 2</td>
+   </tr>
+  </table>
+
+
+
+  <br><br><br><br><br><br><br><br>
+ </body>
+
+</html>
